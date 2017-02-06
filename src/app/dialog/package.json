@@ -1,0 +1,24 @@
+{
+  "name": "ng2dialog",
+  "version": "1.0.0",
+  "description": "a simple dialog div for angular2",
+  "main": "ng2-dialog.component.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cedvdb/ng2dialog.git"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "dialog"
+  ],
+  "author": "cedvdb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cedvdb/ng2dialog/issues"
+  },
+  "homepage": "https://github.com/cedvdb/ng2dialog#readme"
+}
