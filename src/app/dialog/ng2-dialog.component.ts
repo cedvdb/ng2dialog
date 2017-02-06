@@ -45,7 +45,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 	`]
 })
 export class Ng2DialogComponent implements OnInit {
-	private _open:boolean;
+	@Input() private _open:boolean;
 	@Output() private closed = new EventEmitter<boolean>();
 	@Input() private closeable = true;
 
@@ -55,15 +55,6 @@ export class Ng2DialogComponent implements OnInit {
 
 	close(){
 		this.closed.emit(true);
-	}
-
-	get open(){
-		return this._open;
-	}
-
-	@Input()
-	set open(open){
-		this._open = open;
 	}
 
 }
