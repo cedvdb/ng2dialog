@@ -1,3 +1,5 @@
-<h1>
-  {{title}}
-</h1>
+<button (click)="open = true;">open dialog</button>
+
+<ng2-dialog class="arr" [open]="open" (closed)="open = false">
+  <div>This is my dialog</div>
+</ng2-dialog>
