@@ -1,5 +1,7 @@
-<button (click)="open = true;">open dialog</button>
+<button (click)="open = true">open dialog</button>
 
-<ng2-dialog class="arr" [open]="open" (closed)="open = false">
-  <div>This is my dialog</div>
+<ng2-dialog [open]="open" (closed)="open = false">
+  <div>This is the content of my dialog dialog</div>
 </ng2-dialog>
+
+<pre>{{code}}</pre>
