@@ -2,12 +2,13 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
 	selector: 'ng2-dialog',
-	template: `<div (click)="close()" *ngIf="open" class="modal">
-								<div class="dlg" (click)="$event.stopPropagation()">
-									<div class="closeIc" (click)="close()" *ngIf="closeable">&#10005;</div>
-									<div class="content"><ng-content></ng-content></div>
-								</div>
-						 <div>
+	template: `
+		<div (click)="close()" *ngIf="open" class="modal">
+			<div class="dlg" (click)="$event.stopPropagation()">
+				<div class="closeIc" (click)="close()" *ngIf="closeable">&#10005;</div>
+				<div class="content"><ng-content></ng-content></div>
+			</div>
+		<div>
 	`,
 	styles: [`
 		.dlg{
@@ -45,8 +46,7 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 	`]
 })
 export class Ng2DialogComponent implements OnInit {
-	@Input() private _open:boolean;
-	@Output() private closed = new EventEmitter<boolean>();
+	@Input() private open:boolean;
 	@Input() private closeable = true;
 
 	constructor() { }
@@ -54,7 +54,7 @@ export class Ng2DialogComponent implements OnInit {
 	ngOnInit() { }
 
 	close(){
-		this.closed.emit(true);
+		this.open = false;
 	}
 
 }

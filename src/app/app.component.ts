@@ -9,9 +9,9 @@ export class AppComponent {
   open = false;
   style="red"
   code=`
-  <button (click)="open = true">open dialog</button>
+  <button (click)="dlg.open = true">open dialog</button>
 
-  <ng2-dialog [open]="open" (closed)="open = false">
+  <ng2-dialog #dlg >
     <div>This is the content of my dialog dialog</div>
   </ng2-dialog>`;
 }
