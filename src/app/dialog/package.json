@@ -1,6 +1,6 @@
 {
   "name": "ng2dialog",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "a simple dialog div for angular2",
   "main": "ng2-dialog.component.ts",
   "scripts": {
