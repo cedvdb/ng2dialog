@@ -73,9 +73,9 @@ import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 	`]
 })
 export class Ng2DialogComponent implements OnInit {
-	@Input() private open:boolean;
-	@Input() private closeable = true;
-	@Output() private closed = new EventEmitter<boolean>();
+	@Input() open:boolean;
+	@Input() closeable = true;
+	@Output() closed = new EventEmitter<boolean>();
 
 	constructor() { }
 

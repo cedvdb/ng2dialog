@@ -1,11 +1,5 @@
 simple dialog
 
-#Demo 
-
-You can see it in action in the angularfireUi widget :
-
-https://cedvdb.github.io/AngularFireUi/index.html
-
 #Installation
 
 ```
